@@ -138,7 +138,7 @@ while True:
     # Проверка столкновения с врагом
     if pygame.sprite.spritecollideany(P1, enemies):
         pygame.mixer.music.stop()                                       # Остановить музыку
-        crash_sound = pygame.mixer.Sound("Labs/Lab8/1_racer/resources/crash.wav")  # Звук аварии
+        crash_sound = pygame.mixer.Sound("Lab8/car/resources/crash.wav")  # Звук аварии
         crash_sound.play()                                              # Проиграть звук
         time.sleep(1)                                                   # Подождать
 
