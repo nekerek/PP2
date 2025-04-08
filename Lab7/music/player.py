@@ -44,12 +44,12 @@ while running:
             pygame.mixer.music.stop()
             paused = True
 
-        elif keys[pygame.K_n]:  
+        elif keys[pygame.K_RIGHT]:  
             track_index = (track_index + 1) % len(tracks)
             pygame.mixer.music.load(os.path.join(music_folder, tracks[track_index]))
             pygame.mixer.music.play()
 
-        elif keys[pygame.K_b]:  
+        elif keys[pygame.K_LEFT]:  
             track_index = (track_index - 1) % len(tracks)
             pygame.mixer.music.load(os.path.join(music_folder, tracks[track_index]))
             pygame.mixer.music.play()

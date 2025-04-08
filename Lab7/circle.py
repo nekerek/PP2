@@ -8,13 +8,13 @@ size = width, height = 800, 600
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Red Circle")
 
-circle_x = 25
-circle_y = 25
+circle_x = 400
+circle_y = 300
 circle_speed = 20
 
 while True:
     screen.fill('white')
-    pygame.draw.circle(screen, "red", (circle_x, circle_y), 25)
+    pygame.draw.circle(screen, "blue", (circle_x, circle_y), 50)
 
     keys = pygame.key.get_pressed()
 
