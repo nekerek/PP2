@@ -120,7 +120,7 @@ def on_pattern():
 
 # Вставка или обновление
 
-def addupdate_contact():
+def add_update_contact():
     p_first = input("Имя: ").strip()
     p_last = input("Фамилия (необязательно): ").strip() or None
     p_phone = input("Телефон: ").strip()
@@ -158,7 +158,7 @@ def get_paginated():
 def main():
     init_db()
     while True:
-        print("\nМеню Телефонной книги:")
+        print("\n Меню Телефонной книги:")
         print("1. Импорт из CSV")
         print("2. Добавить контакт вручную")
         print("3. Обновить контакт")
@@ -183,7 +183,7 @@ def main():
         elif inp == '6':
             on_pattern()
         elif inp == '7':
-            addupdate_contact()
+            add_update_contact()
         elif inp == '8':
             get_paginated()
         elif inp == '0':
