@@ -19,11 +19,12 @@ SCREEN_HEIGHT = 600                  # Высота окна
 # Инициализирование игрового окно
 game_window = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Змейка')
+
 # определение положения змеи по умолчанию
 snake_position = [100, 50]
 snake_speed = 15
-# определение положения змеи по умолчанию
-snake_position = [100, 50]
+
+
 
 # определение первых 4 блоков тела змеи
 snake_body = [[100, 50],

@@ -135,3 +135,4 @@ while True:
         i += 1
     
     pygame.display.flip()
+    FramePerSec.tick(FPS)
